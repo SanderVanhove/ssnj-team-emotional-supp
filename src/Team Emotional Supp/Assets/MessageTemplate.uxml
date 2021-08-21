@@ -1,4 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="Style.uss" />
-    <ui:Label text="Lol no i dont know" display-tooltip-when-elided="true" class="phone-message" />
-</ui:UXML>

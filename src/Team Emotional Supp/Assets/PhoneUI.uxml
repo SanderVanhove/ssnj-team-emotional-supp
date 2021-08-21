@@ -1,6 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="Style.uss" />
-    <ui:VisualElement style="width: 371px; background-color: rgb(14, 12, 17); border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; height: 548px; align-items: center; justify-content: center; padding-bottom: 19px;">
-        <ui:ScrollView name="message-container" style="height: 475px; width: 312px; justify-content: flex-end; align-items: auto; background-color: rgb(255, 255, 255); border-top-left-radius: 9px; border-bottom-left-radius: 9px; border-top-right-radius: 9px; border-bottom-right-radius: 9px; padding-left: 12px; padding-right: 12px; padding-top: 12px; padding-bottom: 12px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; flex-direction: row; flex-wrap: wrap; -unity-text-align: upper-left; flex-shrink: 1;" />
-    </ui:VisualElement>
-</ui:UXML>

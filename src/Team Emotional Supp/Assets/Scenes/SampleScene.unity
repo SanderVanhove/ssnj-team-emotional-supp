@@ -196,6 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264c795518bb8d944bd4e1667ed42070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  texterName: Anny
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
