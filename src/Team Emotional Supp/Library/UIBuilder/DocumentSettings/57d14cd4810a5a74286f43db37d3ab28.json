@@ -3,13 +3,13 @@
     "UxmlPath": "Assets/UI/PhoneUI.uxml",
     "CanvasX": 0,
     "CanvasY": 1,
-    "CanvasWidth": 1985,
-    "CanvasHeight": 755,
+    "CanvasWidth": 1399,
+    "CanvasHeight": 770,
     "MatchGameView": true,
-    "ZoomScale": 1.0,
+    "ZoomScale": 1.25,
     "PanOffset": {
-        "x": 142.108154296875,
-        "y": 26.7396240234375
+        "x": 103.77499389648438,
+        "y": -83.7603759765625
     },
     "ColorModeBackgroundOpacity": 1.0,
     "ImageModeCanvasBackgroundOpacity": 1.0,

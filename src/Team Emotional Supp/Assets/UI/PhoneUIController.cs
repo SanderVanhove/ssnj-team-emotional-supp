@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEditor;
 
 public class PhoneUIController : MonoBehaviour
 {
     private ScrollView messageContainer;
+    private ScrollView instaPostContainer;
+    
+    private VisualTreeAsset instaPostTemplate;
     private Label texterNameLabel;
 
     public string texterName;
@@ -13,8 +17,10 @@ public class PhoneUIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var root = GetComponent<UIDocument>().rootVisualElement;
+        instaPostTemplate = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/UI/InstaPost.uxml");
+        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
         messageContainer = root.Q<ScrollView>("message-container");
+        instaPostContainer = root.Q<ScrollView>("post-container");
         texterNameLabel = root.Q<Label>("texter-name");
         texterNameLabel.text = texterName.Length > 0 ? texterName : "Texter Name";
 
@@ -23,6 +29,8 @@ public class PhoneUIController : MonoBehaviour
         StartCoroutine(AddDelayedMessage("You ok?", 2));
         StartCoroutine(AddDelayedMessage("This happens every time...", 3.5f));
         StartCoroutine(AddDelayedMessage("Text me back if you can!", 5));
+
+        AddInstaPost("Hans", "Look at this pic ma man!");
     }
 
     public void AddMessage(string text)
@@ -41,9 +49,12 @@ public class PhoneUIController : MonoBehaviour
         AddMessage(text);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddInstaPost(string name, string text)
     {
-        
+        VisualElement newPost = instaPostTemplate.CloneTree();
+        newPost.Q<Label>("post-name").text = name;
+        newPost.Q<Label>("post-text").text = text;
+
+        instaPostContainer.Add(newPost);
     }
 }

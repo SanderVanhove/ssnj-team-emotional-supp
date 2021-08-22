@@ -13,51 +13,37 @@
         "m_CodePreviewVisible": true,
         "m_OpenUXMLFiles": [
             {
-                "m_OpenUSSFiles": [
-                    {
-                        "m_StyleSheet": {
-                            "fileID": 7433441132597879392,
-                            "guid": "b65a603e2f41d3c47be04d379744fef6",
-                            "type": 3
-                        },
-                        "m_BackupStyleSheet": {
-                            "instanceID": 0
-                        },
-                        "m_OldPath": "Assets/UI/Style.uss"
-                    }
-                ],
+                "m_OpenUSSFiles": [],
                 "m_VisualTreeAssetBackup": {
                     "instanceID": 0
                 },
-                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/PhoneUI.uxml",
+                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/InstaPost.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "57d14cd4810a5a74286f43db37d3ab28",
+                    "guid": "2c5a262690d3d9542904444c4e918a11",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
-                    "fileID": 7433441132597879392,
-                    "guid": "b65a603e2f41d3c47be04d379744fef6",
-                    "type": 3
+                    "instanceID": 0
                 },
                 "m_Settings": {
-                    "UxmlGuid": "57d14cd4810a5a74286f43db37d3ab28",
-                    "UxmlPath": "Assets/UI/PhoneUI.uxml",
+                    "UxmlGuid": "2c5a262690d3d9542904444c4e918a11",
+                    "UxmlPath": "Assets/UI/InstaPost.uxml",
                     "CanvasX": 0,
-                    "CanvasY": 1,
-                    "CanvasWidth": 1985,
-                    "CanvasHeight": 755,
-                    "MatchGameView": true,
+                    "CanvasY": 0,
+                    "CanvasWidth": 350,
+                    "CanvasHeight": 450,
+                    "MatchGameView": false,
                     "ZoomScale": 1.0,
                     "PanOffset": {
-                        "x": 142.108154296875,
-                        "y": 26.7396240234375
+                        "x": 20.0,
+                        "y": 20.0
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,
                     "CameraModeCanvasBackgroundOpacity": 1.0,
-                    "EnableCanvasBackground": true,
-                    "CanvasBackgroundMode": 2,
+                    "EnableCanvasBackground": false,
+                    "CanvasBackgroundMode": 0,
                     "CanvasBackgroundColor": {
                         "r": 0.0,
                         "g": 0.0,
@@ -68,7 +54,7 @@
                         "instanceID": 0
                     },
                     "CanvasBackgroundImageScaleMode": 1,
-                    "CanvasBackgroundCameraName": "Main Camera"
+                    "CanvasBackgroundCameraName": ""
                 },
                 "m_OpenSubDocumentParentIndex": -1,
                 "m_OpenSubDocumentParentSourceTemplateAssetIndex": -1
