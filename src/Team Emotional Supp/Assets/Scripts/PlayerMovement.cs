@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 40f;
 
     private CharacterController2D controller;
+    private Animator animator;
     private float horizontalMove = 0f;
     private bool jump = false;
     private bool crouch = false;
@@ -16,12 +17,14 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
         jump = jump || Input.GetButtonDown("Jump");
         crouch = Input.GetButton("Crouch");
     }
