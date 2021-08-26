@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Elevator
+  - Left Elevator
+  - Right Elevator
   layers:
   - Default
   - TransparentFX
