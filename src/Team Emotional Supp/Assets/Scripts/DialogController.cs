@@ -11,6 +11,7 @@ public class DialogController : MonoBehaviour
     public GameObject customButton;
     public GameObject optionPanel;
     public Canvas canvas;
+    public GameObject portraits;
     public bool isTalking = false;
 
     static Story story;
@@ -22,6 +23,11 @@ public class DialogController : MonoBehaviour
         FinishDialogue();
     }
 
+    private void switchPortraitVisibility(string portraitName, bool isVisible)
+    {
+        portraits.transform.Find(portraitName).gameObject.SetActive(isVisible);
+    }
+
     // Start is called before the first frame update
     public void Init(TextAsset inkFile)
     {
@@ -31,6 +37,9 @@ public class DialogController : MonoBehaviour
 
         canvas.GetComponent<Canvas>().enabled = true;
         canvas.gameObject.SetActive(true);
+
+        foreach (Transform child in portraits.transform)
+            child.gameObject.SetActive(false);
 
         NextDialogue();
     }
@@ -162,6 +171,12 @@ public class DialogController : MonoBehaviour
                     break;
                 case "char":
                     nametag.text = param;
+                    break;
+                case "show":
+                    switchPortraitVisibility(param, true);
+                    break;
+                case "hide":
+                    switchPortraitVisibility(param, false);
                     break;
             }
         }

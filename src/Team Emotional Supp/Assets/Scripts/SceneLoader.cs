@@ -19,11 +19,21 @@ public class SceneLoader : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void GoToCreditsScreen()
+    {
+        SceneManager.LoadScene(3);
     }
 }

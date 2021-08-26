@@ -4,59 +4,44 @@ using UnityEngine;
 
 public class ElevatorSystem : MonoBehaviour
 {
-    public Transform rightElevatorTarget;
-    public Transform leftElevatorTarget;
+    public Transform target;
+    public Canvas canvas;
 
-    public bool rightElevator;
-    public bool leftElevator;
+    private bool canTakeElevator = false;
+    private GameObject player;
 
-
-    // Start is called before the first frame update
     void Start()
     {
-        
+        canvas.GetComponent<Canvas>().enabled = false;
+        canvas.gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && rightElevator == true)
+        if (Input.GetKeyDown(KeyCode.E) && canTakeElevator)
         {
-            transform.position = rightElevatorTarget.position;
-        }
-
-        if (Input.GetKeyDown(KeyCode.E) && leftElevator == true)
-        {
-            transform.position = leftElevatorTarget.position;
+            player.transform.position = target.position;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Right Elevator"))
-        {
-            rightElevator = true;
-        }
+        if (!collision.CompareTag("Player")) return;
 
-        if (collision.CompareTag("Left Elevator"))
-        {
-            leftElevator = true;
-        }
+        canTakeElevator = true;
+        player = collision.gameObject;
 
+        canvas.GetComponent<Canvas>().enabled = true;
+        canvas.gameObject.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Right Elevator"))
-        {
-            rightElevator = false;
-        }
+        if (!collision.CompareTag("Player")) return;
 
-        if (collision.CompareTag("Left Elevator"))
-        {
-            leftElevator = false;
-        }
+        canTakeElevator = false;
 
-
+        canvas.GetComponent<Canvas>().enabled = false;
+        canvas.gameObject.SetActive(false);
     }
 }

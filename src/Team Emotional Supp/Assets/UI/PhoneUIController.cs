@@ -79,17 +79,16 @@ public class PhoneUIController : MonoBehaviour
 
     private void SendTestMessages()
     {
-        StartCoroutine(AddDelayedMessage("Hey", "Anny", 5));
-        StartCoroutine(AddDelayedMessage("You ok?", "Anny", 6));
-        StartCoroutine(AddDelayedMessage("This happens every time...", "Anny", 7.5f));
-        StartCoroutine(AddDelayedMessage("Text me back when you can!", "Anny", 9));
+        StartCoroutine(AddDelayedMessage("Hey sweety,", "Mom <3", 5));
+        StartCoroutine(AddDelayedMessage("Good luck on your new job!", "Mom <3", 6));
+        StartCoroutine(AddDelayedMessage("I know you wanted this for so long.", "Mom <3", 7.5f));
+        StartCoroutine(AddDelayedMessage("So you have fun alright?", "Mom <3", 9));
+        StartCoroutine(AddDelayedMessage("Love you!", "Mom <3", 10));
 
-        StartCoroutine(AddDelayedMessage("So euhm,", "Mark", 13));
-        StartCoroutine(AddDelayedMessage("Sorry for last night.", "Mark", 15));
-        StartCoroutine(AddDelayedMessage("I didn't mean it like that.", "Mark", 17));
+        StartCoroutine(AddDelayedMessage("You'll kill it today!", "BFF Laura", 13));
+        StartCoroutine(AddDelayedMessage("Show those game nerds your awesome skills!", "BFF Laura", 15));
 
-        StartCoroutine(AddDelayedInstaPost("Hanna", "Look at this pic ma girls!", "Assets/UI/placeholder_image.png", 2));
-        StartCoroutine(AddDelayedInstaPost("Eric", "Check out this sweet choco latte, jum!", "Assets/UI/placeholder_image.png", 3));
+        StartCoroutine(AddDelayedInstaPost("Rose", "Starting my new job as game dev, wish me luck!!", "Assets/UI/placeholder_image.png", 5));
     }
 
     private void AddMessageToContainer(string text)
