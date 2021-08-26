@@ -90,18 +90,18 @@ public class CharacterController2D : MonoBehaviour
 				move *= m_CrouchSpeed;
 
 				// Disable one of the colliders when crouching
-				if (m_CrouchDisableCollider != null)
-					m_CrouchDisableCollider.enabled = false;
+				//if (m_CrouchDisableCollider != null)
+				//	m_CrouchDisableCollider.enabled = false;
 			} else
 			{
 				// Enable the collider when not crouching
-				if (m_CrouchDisableCollider != null)
-					m_CrouchDisableCollider.enabled = true;
+			//	if (m_CrouchDisableCollider != null)
+				//	m_CrouchDisableCollider.enabled = true;
 
 				if (m_wasCrouching)
 				{
 					m_wasCrouching = false;
-					OnCrouchEvent.Invoke(false);
+				//	OnCrouchEvent.Invoke(false);
 				}
 			}
 

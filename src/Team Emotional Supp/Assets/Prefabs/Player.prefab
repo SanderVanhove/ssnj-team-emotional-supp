@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 8164568896614094275}
   - component: {fileID: 8164568896614094284}
   - component: {fileID: 8164568896614094279}
+  - component: {fileID: 96488313030490419}
   - component: {fileID: 7851742289433777066}
   m_Layer: 6
   m_Name: Player
@@ -224,6 +225,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 40
+--- !u!114 &96488313030490419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164568896614094286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6019d846544934ab826aad48eeb982, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorTarget: {fileID: 0}
+  rightElevator: 0
 --- !u!95 &7851742289433777066
 Animator:
   serializedVersion: 3
